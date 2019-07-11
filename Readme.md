@@ -6,6 +6,7 @@
  - Python 2.7
  
  ## Instruction
-run  ```python
+run 
+```python
  python foot_step_planning.py
- ```
+```
