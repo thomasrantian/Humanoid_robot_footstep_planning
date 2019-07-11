@@ -1,4 +1,7 @@
 # Foot Step Planning Based on A \* algorithm
+In this project, we proposed an online footstep planning algorithm for a humanoid robot. The algorithm plans an optimal (and collision free) step sequence for a humanoid robot to walk to the target location. 
+
+<img src="foot_step_planning.gif" width="550" height="200" />
 
 
 ## Required packages:
