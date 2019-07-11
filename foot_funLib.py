@@ -185,7 +185,7 @@ class Node:
         return sucessor_list
 
 """
-A_start searching function
+A_star searching function
 """
 def A_star_search(start, goal, env, left_foot, right_foot):
     # build the PQ
