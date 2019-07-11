@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
         goal_config = [2.6,-1.3,-pi/2]
         start = time.clock()
-    #         #### YOUR CODE HERE ####
+   
     #     # define the planner config
 
         start_config = [-2.6, -1.0, 0.0 ,-2.6, -1.3, 0.0]
@@ -89,9 +89,9 @@ if __name__ == "__main__":
         print'dy: 0.2 m'
         print'd_theta: 0.125pi rad'
 
-    #     #### Implement your algorithm to compute a path for the robot's base starting from the current configuration of the robot and ending at goalconfig. The robot's base DOF have already been set as active. It may be easier to implement this as a function in a separate file and call it here.
+    
         path, handles = A_star_search(start_config, goal_config, env,left_foot,right_foot)
-    #     #### Draw the X and Y components of the configurations explored by your algorithm
+    
         handles = []
         handles.append(env.plot3(points=array((goal_config[0],goal_config[1],0.1)),
                                   pointsize=0.1,
@@ -132,10 +132,10 @@ if __name__ == "__main__":
 
             
 
-    #     #### END OF YOUR CODE ###
+    
     end = time.clock()
     print "Time to find the path is : ", end - start, 's'
-    #     # Now that you have computed a path, convert it to an openrave trajectory 
+   
     # traj = ConvertPathToTrajectory(robot, path)
 
     # # Execute the trajectory on the robot.
